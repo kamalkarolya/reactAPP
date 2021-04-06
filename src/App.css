@@ -1,0 +1,15 @@
+
+
+.cardn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.promax{
+    align-self: center;
+}
+@media screen and (max-width: 500px){ 
+    .promax{
+        align-self: initial;
+    }
+}
