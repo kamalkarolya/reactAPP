@@ -1,6 +1,7 @@
 import React from 'react';
+import { Btnt } from './Btn';
 import './Greeting.css';
- import Time,{time} from './Time';
+//  import Time,{time} from './Time';
 // import * as tame from './Time';
 // when calling use -------{tame.time}------
 
@@ -24,8 +25,9 @@ function Greeting(){
     
     return (
         <>
-        <div  className="greet" style={{color:'green'}} >Hello sir,  <span style={styles}> {good + " | "+  time} </span> </div>
-       </>
+        <div className="sect" >
+        <div  className="greet" style={{color:'green'}} >Hello sir,  <span style={styles}> {good} </span> </div>
+       <Btnt /> </div> </>
     )
 
 }

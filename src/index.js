@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import Sdata from './Sdata';
 // IN LAMEN LANGUAGE  HERE WE CALL FUNCTION 
 
 
 
-ReactDOM.render(  <> <App /> 
-
+ReactDOM.render(  <> <App />  
   </>
  ,document.getElementById('root'));
 //  const styling ={

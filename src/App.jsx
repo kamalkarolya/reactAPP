@@ -6,6 +6,7 @@ import Greeting from './Greeting';
 import Navbar from './Navbar';
 import Sdata, { Mdata } from './Sdata';
 import Time from './Time';
+import Btn, {Diff }  from './Btn';
 // import Sdata from './Sdata';
 // var good = '';
 // let Crdate = new Date();
@@ -50,7 +51,10 @@ import Time from './Time';
    return <>
    <Mcard  key={val.id}
      Mname= {val.Mname}
-     designation= {val.designation} /> </>
+     designation= {val.designation}
+     insta={val.insta}
+     linkedin={val.linkedin}
+     /> </>
  }
 // -----------------------both are corrct method------------------2 one is more efficient
 function App() {
@@ -107,6 +111,10 @@ function App() {
    <hr style={{width:"100%"}} ></hr>
     <p style={{fontSize:"0.7rem"}} >made with <i style={{color:"red"}} class="bi bi-suit-heart-fill"></i> by Ultra Pro Max</p>
     </div>
+    <Btn />
+    {/* <Btnt /> */}
+   <Diff />
+  
   </>
 }
 export default App;

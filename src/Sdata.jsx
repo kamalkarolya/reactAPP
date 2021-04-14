@@ -51,31 +51,37 @@ const Mdata = [
         id:1,
         Mname: "Kunal Bansal",
         designation : "Community Head",
+        insta : "https://instagram.com/chaudhary_kunal_bainsla?igshid=aq4gwbbpzbo8  ",
+        linkedin: " https://www.linkedin.com/in/kunal-bainsla/ "
         
     },
     {
         id:2,
         Mname: "Parth Garg",
         designation : "Chief Management Officer",
-        
+        insta : "https://instagram.com/parth_cap?igshid=15bz0n3ylggq7  ",
+        linkedin: "https://www.linkedin.com/in/parth-garg-2836a5201/  "
     },
     {
         id:3,
         Mname: "Utkarsh Garg",
         designation : "Senior Advisor",
-        
+        insta : " https://instagram.com/_utkarshgarg?igshid=16cpxkwn8jaeh ",
+        linkedin: " https://www.linkedin.com/in/utkarsh-garg-3645501b0 " 
     },
     {
         id:4,
         Mname: "Aryan Gupta",
         designation : "General Secretory",
-        
+        insta : "  https://instagram.com/g.aryaan?igshid=is8gtyo7xwhg",
+        linkedin: "https://www.linkedin.com/in/aryan-gupta-1325a3195/  " 
     },
     {
         id:5,
         Mname: "Dhruv Singh Rajput",
         designation : "Joint Secretory",
-        
+        insta : " https://instagram.com/dhruvsinghrajput_dsr?igshid=9ykd1b4nyrtm ",
+        linkedin: " # "
     }
 ]
 export default Sdata;

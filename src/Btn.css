@@ -1,0 +1,15 @@
+.btn-a{
+    /* width: 12%; */
+    align-self: center;
+    /* display: flex; */
+    justify-content: center;
+    padding: 12px;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    background-color: coral;
+    margin: 12px;
+}
+.btn-a:hover{
+    background-color: brown;
+
+}

@@ -26,8 +26,8 @@ const Mcard = (props)=>{
     <h2>{props.Mname}</h2>
      <h4> {props.designation} </h4>
      <div className="social" >
-         <p> <a href="www.google.com"  target="_blank" > <i class="bi bi-instagram"></i> </a> </p>
-         <p> <a href="www.google.com"  target="_blank" ><i class="bi bi-linkedin"></i>  </a> </p>
+         <p> <a href={props.insta}  target="_blank" > <i class="bi bi-instagram"></i> </a> </p>
+         <p> <a href={props.linkedin}  target="_blank" ><i class="bi bi-linkedin"></i>  </a> </p>
      </div>
      </div>
      </>
