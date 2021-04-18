@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 // IN LAMEN LANGUAGE  HERE WE CALL FUNCTION 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(  <> <App />  

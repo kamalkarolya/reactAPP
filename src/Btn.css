@@ -7,9 +7,25 @@
     font-size: 1.4rem;
     border-radius: 25px;
     background-color: coral;
+    border: 2px solid coral;
     margin: 12px;
 }
 .btn-a:hover{
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(78, 71, 71);
 
+}
+.forum{
+  width: 50%;
+  padding: 12px 20px;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: rgba(250, 218, 218, 0.616);
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+}
+.forum:hover{
+  background-color: rgb(214, 76, 76);
 }
