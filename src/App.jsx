@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState }  from 'react';
 import './App.css';
 import * as cal from './Calculator';
 import Card, { Mcard } from './Card';
@@ -15,6 +15,11 @@ import {
 } from "react-router-dom";
 import Login from './Login';
 import Todo from './Todo';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FlareIcon from '@material-ui/icons/Flare';
+import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
+import Clock from 'react-clock';
+import 'react-clock/dist/Clock.css';
 // import Sdata from './Sdata';
 // var good = '';
 // let Crdate = new Date();
@@ -66,6 +71,18 @@ const cardm = (val) => {
 }
 // -----------------------both are corrct method------------------2 one is more efficient
 function App() {
+  const [value, setValue] = useState(new Date());
+ 
+  useEffect(() => {
+    const interval = setInterval(
+      () => setValue(new Date()),
+      1000
+    );
+ 
+    return () => {
+      clearInterval(interval);
+    }
+  }, []);
   return <>
     <Router>
       <Header />
@@ -109,6 +126,8 @@ function App() {
         <Route exact path="/" render={
           () => {
             return <>
+            <div className="digital" > 
+              <Clock value={value} /></div>
               <Time style={{ marginTop: "6vw" }} />
               <Greeting />
              
@@ -128,16 +147,16 @@ function App() {
           () => {
             return <>
               <div className="promax" >
-                <h1>Ultra Pro Max <i style={{ color: "yellow" }} className="bi bi-stars"></i> </h1>
+                <h1>Ultra Pro Max <FlareIcon style={{ color: "yellow" }} />   </h1>
                 <p>A Community who Leads Everyone</p>
                 <hr style={{ margin: "2vw 0 " }} ></hr>
-                <h1 style={{ fontSize: "2.5rem" }} >Our Team</h1>
+                <h1 className="team" >Our Team <PeopleOutlineIcon style={{color:"coral" , fontSize:"3.5rem"}}    /> </h1>
                 {Mdata.map(cardm)}
-                <hr style={{ width: "100%" }} >
+                <div className="footer" > <div className="line" > </div>
 
-                </hr>
-                <p style={{ fontSize: "0.7rem" }} >made with <i style={{ color: "red" }} className="bi bi-suit-heart-fill"></i> by Ultra Pro Max</p>
-              </div>
+                
+                <p style={{ fontSize: "0.8rem" }} >Made with  <FavoriteIcon style={{ color: "red", fontSize:"1rem" }}  />  by Ultra Pro Max</p>
+            </div>   </div>
             </>
           }
         } >

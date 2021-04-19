@@ -1,15 +1,20 @@
 .link{
     padding: 8px;
     align-self: center;
-color: #1d2124;
-text-decoration: none;
+    text-decoration: none;
 /* background-color: transparent!important; */
-margin: 0 8px;
-color: white!important;
+    margin: 0 8px;
 }
 .link:hover{
     border-radius: 27px;
     border: 2px solid red;
     color: #000000bd;
     text-decoration: none;
+}
+.link-b{
+    color: black!important;
+}
+
+.link-w{
+    color: rgb(255, 255, 255)!important;
 }

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import Button from '@material-ui/core/Button';
+
 import './Btn.css';
 const Form =() =>{
 
@@ -14,12 +17,14 @@ const Form =() =>{
    return <>
    <h1>Hello {Fname}</h1>
    <input type="text"  className="forum" onChange={inputv}  value={Name} placeholder="Enter Your Name"  />
-   <button className="btn-a" onClick={Submite}   >Submit</button>
+
+   <Button variant="contained" className="btn-a" onClick={Submite}   color="primary"> Submit</Button>
    </>
 
 }
 
 const Forms = () =>{
+
     const [Name,setName] = useState("");
     const [Fname,setFname] = useState("");
     const [Lname,setLname] = useState("");
@@ -46,7 +51,10 @@ const Forms = () =>{
      <h1>Login {Fname} {Lnaam}  </h1>
      <input type="text" className="forum" onChange={inputf}  value={Name}   placeholder=" Your Email" />
      <input type="text" className="forum" onChange={inputl}  value={Lname}  placeholder=" Your Password" />  <br/>
-     <button className="btn-a"  type="submit" >Submit</button>
+    
+      <Button variant="contained" className="btn-a" type="submit" color="primary"> Submit</Button>
+ 
+
     </form>
     </>
 }

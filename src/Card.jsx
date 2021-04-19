@@ -1,5 +1,8 @@
 import React from 'react';
 import "./Card.css";
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 
 function Card (props){
    return <>
@@ -26,8 +29,8 @@ const Mcard = (props)=>{
     <h2>{props.Mname}</h2>
      <h4> {props.designation} </h4>
      <div className="social" >
-         <p> <a href={props.insta}  target="_blank" > <i className="bi bi-instagram"></i> </a> </p>
-         <p> <a href={props.linkedin}  target="_blank" ><i className="bi bi-linkedin"></i>  </a> </p>
+         <p> <a href={props.insta}  target="_blank" > <InstagramIcon /> </a> </p>
+         <p> <a href={props.linkedin}  target="_blank" > <LinkedInIcon /> </a> </p>
      </div>
      </div>
      </>
