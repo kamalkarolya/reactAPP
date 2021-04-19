@@ -13,6 +13,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Login from './Login';
+import Todo from './Todo';
 // import Sdata from './Sdata';
 // var good = '';
 // let Crdate = new Date();
@@ -155,6 +157,12 @@ function App() {
           }
         } >
 
+        </Route>
+        <Route  exact path="/login" >
+          <Login />
+        </Route>
+        <Route  exact path="/todo" >
+          <Todo />
         </Route>
       </Switch>
     </Router>

@@ -1,7 +1,7 @@
 .btn-a{
-    /* width: 12%; */
+     width: 12%; 
     align-self: center;
-    /* display: flex; */
+    display: flex; 
     justify-content: center;
     padding: 12px;
     font-size: 1.4rem;
@@ -10,11 +10,7 @@
     border: 2px solid coral;
     margin: 12px;
 }
-.btn-a:hover{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(78, 71, 71);
 
-}
 .forum{
   width: 50%;
   padding: 12px 20px;

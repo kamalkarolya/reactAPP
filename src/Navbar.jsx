@@ -11,8 +11,8 @@ import "./Navbar.css";
 const Header=()=> {
     return( <>
     
-    <Navbar bg="light" expand="lg"  >
-  <Navbar.Brand to="/" >Ultra Pro Max<i style={{color:"yellow"}}  className="bi bi-stars"></i></Navbar.Brand>
+    <Navbar bg="dark" expand="lg"   >
+  <Navbar.Brand  > <Link to="/"  className="link" > Ultra Pro Max<i style={{color:"yellow"}}  className="bi bi-stars"></i></Link> </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
@@ -20,8 +20,8 @@ const Header=()=> {
       <NavLink to="/about" className="link" >About</NavLink>
       <NavDropdown title="More" id="basic-nav-dropdown">
         <NavDropdown.Item > <Link to="/ott" className="link" >OTT</Link> </NavDropdown.Item>
-        <NavDropdown.Item> Another action </NavDropdown.Item>
-        <NavDropdown.Item > Something </NavDropdown.Item>
+        <NavDropdown.Item>  <Link to="/login" className="link" >Login</Link>  </NavDropdown.Item>
+        <NavDropdown.Item > <Link to="/todo" className="link" >Todo</Link>  </NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>

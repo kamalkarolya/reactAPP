@@ -1,17 +1,36 @@
 import React , {useState} from 'react';
 import "./Btn.css";
 import {time} from './Time';
+import Button from '@material-ui/core/Button';
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 const Btn = () => {
     const state= useState();
     const [count,setCount] = useState(0);
     const ccon=()=> {
         setCount (count + 1);
     };
-   
+   const cccon=()=>{
+      if (count<1) {
+          alert("Can't Decreament Zero ");
+          
+      }else{
+          setCount (count-1);
+      }
+   };
     return  <>
     <h1>CLICK COUNTER </h1>
     <h1>{count}</h1>
-    <button className="btn-a" onClick={ccon} > Click!!</button>
+    <div style={{display:"flex",justifyContent:"center"}} >
+    <Button  onClick={ccon} style={{margin:"12px"}} variant="contained" className="btn-a" color="primary" >
+       <AddIcon/>
+    </Button>
+    <Button  onClick={cccon} style={{margin:"12px"}} variant="contained" className="btn-a" color="secondary" >
+       <RemoveIcon/>
+    </Button>
+   </div>
+    {/* <button><i className="bi bi-plus-circle-fill"></i></button>
+    <button onClick={cccon} > Decrement</button> */}
    
     </>
 }
@@ -50,7 +69,7 @@ const [bt,setBt]= useState("Dark");
      }
      return<>
      <div style={{backgroundColor:bg}} >
-         
+    
      <button onClick={dark}  onDoubleClick={light}  className="btn-a"  >{bt}</button>
      </div>
      </>

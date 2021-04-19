@@ -3,8 +3,9 @@
     align-self: center;
 color: #1d2124;
 text-decoration: none;
-background-color: transparent;
+/* background-color: transparent!important; */
 margin: 0 8px;
+color: white!important;
 }
 .link:hover{
     border-radius: 27px;
