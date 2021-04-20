@@ -11,9 +11,9 @@ function Time (){
         border :" 2px solid red"
       }
      return <>
-     <TypeText className="head" text='Time moves in one direction, memory in another. <br /> :- William Gibson ' />
-      {/* <h1 ></h1>
-      <h2  >  </h2> */}
+     {/* <TypeText text='  ' /> */}
+      <h1 className="head" >Time moves in one direction, memory in another.</h1>
+      <h2  > :- William Gibson </h2 >
       <p style={{color:"blue"}} > {date}  </p>
       <p style={styling} > {time}  </p>
       </>

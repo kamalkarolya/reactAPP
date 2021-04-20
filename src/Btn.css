@@ -5,9 +5,9 @@
     justify-content: center;
     padding: 12px!important;
     font-size: 1.4rem;
-    border-radius: 25px;
-    /* background-color: coral;
-    border: 2px solid coral; */
+    border-radius: 25px!important;
+    background-color: coral;
+    border: 2px solid coral; 
     margin: 12px;
     
 }

@@ -5,7 +5,7 @@ import Card, { Mcard } from './Card';
 import Greeting from './Greeting';
 import Sdata, { Mdata } from './Sdata';
 import Time from './Time';
-import Btn, { Diff } from './Btn';
+import Btn, { Diff,Effec } from './Btn';
 import Form, { Forms } from './Form';
 import Header from './Navbar';
 import {
@@ -20,6 +20,9 @@ import FlareIcon from '@material-ui/icons/Flare';
 import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
 import Clock from 'react-clock';
 import 'react-clock/dist/Clock.css';
+import Pokemon from './Pokemon';
+import User from './User';
+import Error from './Error';
 // import Sdata from './Sdata';
 // var good = '';
 // let Crdate = new Date();
@@ -71,18 +74,18 @@ const cardm = (val) => {
 }
 // -----------------------both are corrct method------------------2 one is more efficient
 function App() {
-  const [value, setValue] = useState(new Date());
+  // const [value, setValue] = useState(new Date());
  
-  useEffect(() => {
-    const interval = setInterval(
-      () => setValue(new Date()),
-      1000
-    );
+  // useEffect(() => {
+  //    const interval = setInterval(
+  //   () => setValue(new Date()),
+  //      1000
+  //    );
  
-    return () => {
-      clearInterval(interval);
-    }
-  }, []);
+  //   return () => {
+  //     clearInterval(interval);
+  //   }
+  // }, []);
   return <>
     <Router>
       <Header />
@@ -127,7 +130,8 @@ function App() {
           () => {
             return <>
             <div className="digital" > 
-              <Clock value={value} /></div>
+              {/* <Clock value={value} /> */}
+              </div>
               <Time style={{ marginTop: "6vw" }} />
               <Greeting />
              
@@ -137,6 +141,7 @@ function App() {
               <Diff />
               <Form />
               <Forms />
+              <Effec />
             </>
 
           }
@@ -182,6 +187,15 @@ function App() {
         </Route>
         <Route  exact path="/todo" >
           <Todo />
+        </Route>
+        <Route  exact path="/pokemon" >
+          <Pokemon />
+        </Route>
+        <Route  path="/user/:fname/:lname" >
+           <User />
+        </Route>
+        <Route  >
+          <Error />
         </Route>
       </Switch>
     </Router>

@@ -1,5 +1,5 @@
 .link{
-    padding: 8px;
+    /* padding: 8px; */
     align-self: center;
     text-decoration: none;
 /* background-color: transparent!important; */
@@ -7,7 +7,7 @@
 }
 .link:hover{
     border-radius: 27px;
-    border: 2px solid red;
+    border-bottom: 2px solid red;
     color: #000000bd;
     text-decoration: none;
 }

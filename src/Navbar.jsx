@@ -25,8 +25,9 @@ const Header=()=> {
         <NavDropdown.Item > <Link to="/ott" className="link link-b" >OTT</Link> </NavDropdown.Item>
         <NavDropdown.Item>  <Link to="/login" className="link link-b " >Login</Link>  </NavDropdown.Item>
         <NavDropdown.Item > <Link to="/todo" className="link link-b " >Todo</Link>  </NavDropdown.Item>
+        <NavDropdown.Item > <Link to="/user" className="link link-b " >User</Link>  </NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item > <Link to="/pokemon" className="link link-b " >Pokemon</Link> </NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Form inline>

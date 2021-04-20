@@ -1,15 +1,19 @@
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 import "./Btn.css";
 import {time} from './Time';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
-const Btn = () => {
-    const state= useState();
-    const [count,setCount] = useState(0);
+ 
+    
+const Btn = () => { 
+    
     const ccon=()=> {
         setCount (count + 1);
     };
+    const state= useState();
+    const [count,setCount] = useState(0);
+  
    const cccon=()=>{
       if (count<1) {
           alert("Can't Decreament Zero ");
@@ -76,6 +80,25 @@ const [bt,setBt]= useState("Dark");
 
 
 }
+
+const Effec =()=>{
+
+
+    const [numb,setNumb] = useState(0);
+  const num =()=>{
+        setNumb(numb+1);
+    } 
+    //  useEffect(()=>{
+    //     alert("enjoy");
+    // },[numb]) ; 
+    useEffect(()=>{
+        document.title=`You Clicked Me ${numb} times`;
+    });
+     return <>
+    <button onClick={num} className="btn-a" > Click me {numb} </button>
+
+     </>
+
+}
 export default Btn;
-export  {Btnt} ; 
-export {Diff};
+export  {Btnt,Effec,Diff} ; 

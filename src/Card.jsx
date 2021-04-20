@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Card.css";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 function Card (props){
+    useEffect(()=>{
+        document.title=`OTT Platforms`;
+    });
    return <>
+   
     <div className="cards" > 
     <a href={props.link} target="_blank" > 
     <button>
@@ -24,6 +28,9 @@ function Card (props){
 }
 
 const Mcard = (props)=>{
+    useEffect(()=>{
+        document.title=`Ultra Pro Max | Teams`;
+    });
     return <> 
     <div className="mcards" >
     <h2>{props.Mname}</h2>
