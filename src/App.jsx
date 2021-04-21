@@ -23,6 +23,7 @@ import 'react-clock/dist/Clock.css';
 import Pokemon from './Pokemon';
 import User from './User';
 import Error from './Error';
+import Search from './Search';
 // import Sdata from './Sdata';
 // var good = '';
 // let Crdate = new Date();
@@ -193,6 +194,9 @@ function App() {
         </Route>
         <Route  path="/user/:fname/:lname" >
            <User />
+        </Route>
+        <Route  path="/search" >
+            <Search />
         </Route>
         <Route  >
           <Error />
